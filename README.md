@@ -1,2 +1,1 @@
-# LOL-Analyzer
-application app based on electron and python
+desktop application based on electron and python
