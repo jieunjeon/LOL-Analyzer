@@ -6,3 +6,5 @@ To run:
 $ npm install
 
 $ electron .
+
+$ gulp
