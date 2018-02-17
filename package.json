@@ -1,23 +1,26 @@
 {
-  "name": "LOLAnalyzer",
-  "version": "1.0.0",
-  "main": "app/main.js",
+  "name": "LOL-Analyzer",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "electron": "^1.3.4",
-    "electron-packager": "^8.0.0",
-    "gulp": "^3.8.8",
-    "gulp-browserify": "^0.5.1",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-react": "^3.1.0",
-    "gulp-run": "^1.7.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "reactify": "^1.1.1"
+    "electron": "^1.7.9",
+    "foreman": "^2.0.0",
+    "react-scripts": "0.8.5"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "electron-reload": "^1.0.2",
-    "lodash": "^4.13.1",
-    "jquery": "^3.1.0"
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start -p 3000"
   }
 }
