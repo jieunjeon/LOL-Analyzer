@@ -9,26 +9,26 @@ class RiotAPI (object) :
         self.region = region
 
     def _request(self, api_url, params={}):
-        args = ("RGAPI-6b4103c7-2ad7-4a95-aff2-4b5153ddaa27")
+        args = ("RGAPI-e6af808d-ed47-4403-b09d-43dadba22b80")
 
-        for key, value in params.items():
+        for key, value in list(params.items()):
             if key not in args:
                 args[key] = value
 
 
         response = requests.get(
-            "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/deserteagie?api_key=RGAPI-6b4103c7-2ad7-4a95-aff2-4b5153ddaa27",
+            "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/deserteagie?api_key=RGAPI-e6af808d-ed47-4403-b09d-43dadba22b80",
             params = args
         )
 
         #print response.URL
-        print response.json()
+        print(response.json())
 
         check = response.json()
-        print check
+        print(check)
 
-        print type(response)
-        print type(check)
+        print(type(response))
+        print(type(check))
 
 
 
@@ -38,6 +38,6 @@ class RiotAPI (object) :
 
 
     def test (self):
-        api_url = "v1.4/summoner/by-name/Teemo?api_key=RGAPI-6b4103c7-2ad7-4a95-aff2-4b5153ddaa27"
+        api_url = "v1.4/summoner/by-name/Teemo?api_key=RGAPI-e6af808d-ed47-4403-b09d-43dadba22b80"
 
         return self._request(api_url)
